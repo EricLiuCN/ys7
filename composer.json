@@ -1,0 +1,21 @@
+{
+    "name": "ericliucn/ys7",
+    "description": "thinkphp3.2 萤石云开放平台PHP SDK",
+    "type": "library",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Ericliucn",
+      		"email": "937634795@qq.com"
+        }
+    ],
+    "minimum-stability": "dev",
+    "require": {
+        "guzzlehttp/guzzle": "^6.4"
+    },
+    "autoload": {
+        "psr-4": {
+            "Ericliucn\\Ys7\\": ""
+        }
+    }
+}
