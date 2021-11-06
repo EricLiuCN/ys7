@@ -121,6 +121,21 @@ class Ys7Client
         return $this->post(self::API_ENDPOINT . '/live/address/get', $params);
     }
 
+    /**
+     * 获取单个设备带通道号信息
+     *
+     * @param $deviceSerial 设备序列号
+     * @return mixed
+     * @throws \GuzzleHttp\Exception\GuzzleException
+     * @throws \think\Exception
+     */
+    public function getCameraChannelInfo($deviceSerial, $channelNo=1){
+        $params = [
+            'source' => $deviceSerial.':'.$channelNo,
+        ];
+        return $this->post(self::API_ENDPOINT . '/live/address/get', $params);
+    }
+
 
     /**
      * 获取设备抓拍图片信息
